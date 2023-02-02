@@ -1,0 +1,544 @@
+header {
+  top: 0;
+  left: 00px;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 3px;
+}
+
+header .title {
+  position: relative;
+  font-weight: 500;
+  color: #45b29a;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  left: 20px;
+}
+
+header ul {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul .aH {
+  position: relative;
+  margin: 0 18px;
+  text-decoration: inherit;
+  color: #45b29a;
+  letter-spacing: 2px;
+  font-weight: 300;
+  border-radius: 20px;
+}
+
+header ul .aH:hover {
+  color: red;
+  background-color: #F2FA5A;
+}
+
+header .contents {
+  float: right;
+  position: relative;
+  right: 30px;
+}
+
+.aH:visited {
+  color: gold;
+}
+
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: gold;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: red;
+    background-color: #F2FA5A;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../background.jpg') no-repeat center center/cover;
+    height: 660px;
+    top: 40px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:gold;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    padding: 34px;
+    /* margin: 2px 55px; */
+    /* border-radius: 28px; */
+    background: #363062;
+    margin-bottom: 20px;
+text-align: center;
+}
+
+#services .box img{
+   height: 300px;
+   width:  250px;
+   display: block;
+}
+
+#services .box p{
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+/* Clients Section */
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../background4.jpg');
+ width: 100%;
+ height: 300px;
+ z-index: -1;
+ opacity: 0.7;
+}
+#services-container::before{
+ content: "";
+ position: absolute;
+ background-color: #143F6B;
+ width: 100%;
+ height: 125%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+/* #contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact2.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    color: black;
+}
+
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: "Lucida Console", "Courier New", monospace;
+
+} */
+#contact-box textarea,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: black;
+}
+
+.h-secondary{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 2.3rem;
+    padding: 12px;
+    color: gold;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: gold ;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+
+}
+
+.center{
+    text-align: center;
+}
+ul{
+  background: black;
+  padding: 20px;
+  color: black;
+}
+.actions-special li {
+  background: #4B7BE5 ;
+  color: dimgray;
+  margin: 5px;
+
+}
+.actions-special li a{
+  padding: 6px 20px;
+  color: gold;
+  margin: 17px;
+  cursor:pointer;
+  text-align: center;
+}
+#home-keyboard{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-keyboard::before{
+    content: "";
+    position: absolute;
+    background: url('../background-keyboard.jpg') no-repeat center center/cover;
+    height: 660px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home-keyboard h1{
+    color:gold;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+#home-keyboard p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#home-mouse{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-mouse::before{
+    content: "";
+    position: absolute;
+    background: url('../background-mouse.jpg') no-repeat center center/cover;
+    height: 660px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home-mouse h1{
+    color:dodgerblue;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+#home-mouse p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#home-headphones{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-headphones::before{
+    content: "";
+    position: absolute;
+    background: url('../background-headphones.jpg') no-repeat center center/cover;
+    height: 660px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home-headphones h1{
+    color:gold;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+#home-headphones p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#home-controllers{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-controllers::before{
+    content: "";
+    position: absolute;
+    background: url('../background-controllers.jpg') no-repeat center center/cover;
+    height: 660px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home-controllers h1{
+    color:gold;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+#home-controllers p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#f1_container {
+  position: relative;
+  z-index: 1;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+  perspective: 1000px;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 1.0s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 1.0s linear;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+    -webkit-box-shadow: 5px 5px 5px #aaa;
+  -moz-box-shadow: 5px 5px 5px #aaa;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+#f1_card img {
+  width:100%;
+  height:100%;
+}
+
+#f1_container:hover #f1_card, #f1_container.hover_effect #f1_card {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+
+  -webkit-box-shadow: -5px 5px 5px #aaa;
+  -moz-box-shadow: -5px 5px 5px #aaa;
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  -webkit-box-sizing: border-box;
+  -moz-transform: rotateY(180deg);
+  -moz-box-sizing: border-box;
+  -o-transform: rotateY(180deg);
+  -o-box-sizing: border-box;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+
+}
+.abc{
+  color: gold;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+#xyz{
+  color: gold;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+0% {color:gold;}
+10%{color:red;}
+20%{color:lime;}
+30%{color:cyan;}
+40%{color:pink; }
+50%{color:red;}
+60%{color:yellow;}
+70%{color:orange;}
+80%{color:cyan;}
+90%{color:red; }
+100%{color:pink;}
+}
